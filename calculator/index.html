@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <link rel="icon" type="image/x-icon" href="calculator.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="script.js"></script> 
+</head>
+<body>
+  <table class="calculator" >
+    <tr>
+      <td colspan="3"> <input class="display-box" type="text" id="output" disabled/></td>
+      <td> <input type="button" value="C" onclick="clearOutput()" id="btn-clr"/></td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="1" onclick="appendToOutput('1')"/></td>
+      <td> <input type="button" value="2" onclick="appendToOutput('2')"/></td>
+      <td> <input type="button" value="3" onclick="appendToOutput('3')"/></td>
+      <td> <input type="button" value="÷" onclick="appendToOutput('/')" id="bagi"/></td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="4" onclick="appendToOutput('4')"/></td>
+      <td> <input type="button" value="5" onclick="appendToOutput('5')"/></td>
+      <td> <input type="button" value="6" onclick="appendToOutput('6')"/></td>
+      <td> <input type="button" value="-" onclick="appendToOutput('-')" id="kurang"/></td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="7" onclick="appendToOutput('7')"/></td>
+      <td> <input type="button" value="8" onclick="appendToOutput('8')"/></td>
+      <td> <input type="button" value="9" onclick="appendToOutput('9')"/></td>
+      <td> <input type="button" value="+" onclick="appendToOutput('+')" id="tambah"/></td>
+    </tr>
+    <tr>
+      <td> <input type="button" value="." onclick="appendToOutput('.')"/></td>
+      <td> <input type="button" value="0" onclick="appendToOutput('0')"/></td>
+      <td> <input type="button" value="=" onclick="calculateResult()" id="samaDengan"/></td>
+      <td> <input type="button" value="×" onclick="appendToOutput('*'); showOperator()"id="kali" /></td>
+    </tr>
+  </table>
+</body>
+</html>
